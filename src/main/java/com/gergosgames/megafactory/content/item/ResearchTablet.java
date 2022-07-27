@@ -1,5 +1,6 @@
 package com.gergosgames.megafactory.content.item;
 
+import com.gergosgames.megafactory.Main;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -10,11 +11,16 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.world.World;
 
 
-public class research_tablet extends Item
+public class ResearchTablet extends Item
 {
     public static ItemBase itemBase = new ItemBase(CreativeTabs.MISC, 1);
 
-    public research_tablet() {}
+    public ResearchTablet(String name) {
+        setUnlocalizedName(Main.MODID + "." + name);
+        setRegistryName(Main.MODID, name);
+        setCreativeTab(CreativeTabs.MISC);
+        setMaxStackSize(1);
+    }
 
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {

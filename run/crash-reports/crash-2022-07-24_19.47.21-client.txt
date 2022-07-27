@@ -5,7 +5,7 @@ Time: 7/24/22 7:47 PM
 Description: Initializing game
 
 java.lang.NullPointerException: Initializing game
-	at com.gergosgames.megafactory.content.item.research_tablet.<init>(research_tablet.java:15)
+	at com.gergosgames.megafactory.content.item.ResearchTablet.<init>(research_tablet.java:15)
 	at com.gergosgames.megafactory.client.ModelRegistrationHandler.registerModels(ModelRegistrationHandler.java:18)
 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_4_ModelRegistrationHandler_registerModels_ModelRegistryEvent.invoke(.dynamic)
 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
@@ -38,7 +38,7 @@ A detailed walkthrough of the error, its code path and all known details is as f
 -- Head --
 Thread: Client thread
 Stacktrace:
-	at com.gergosgames.megafactory.content.item.research_tablet.<init>(research_tablet.java:15)
+	at com.gergosgames.megafactory.content.item.ResearchTablet.<init>(research_tablet.java:15)
 	at com.gergosgames.megafactory.client.ModelRegistrationHandler.registerModels(ModelRegistrationHandler.java:18)
 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_4_ModelRegistrationHandler_registerModels_ModelRegistryEvent.invoke(.dynamic)
 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)

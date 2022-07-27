@@ -1,7 +1,6 @@
 package com.gergosgames.megafactory;
 
 import com.gergosgames.megafactory.client.ModelRegistrationHandler;
-import com.gergosgames.megafactory.content.item.research_tablet;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
