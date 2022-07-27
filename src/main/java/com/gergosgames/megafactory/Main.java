@@ -26,7 +26,6 @@ public class Main
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
-        research_tablet.init();
         ModelRegistrationHandler.registerModels(null);
     }
 

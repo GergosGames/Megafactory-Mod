@@ -14,9 +14,14 @@ public class research_tablet extends Item
 {
     public static ItemBase itemBase = new ItemBase(CreativeTabs.MISC, 1);
 
+    public research_tablet() {}
+
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
-        if(!worldIn.isRemote) playerIn.addExperience(999);
+        if(!worldIn.isRemote) {
+            playerIn.addExperience(999);
+            return new ActionResult<>(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
+        }
         return new ActionResult<>(EnumActionResult.PASS, playerIn.getHeldItem(handIn));
     }
 

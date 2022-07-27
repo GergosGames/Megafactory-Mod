@@ -1,6 +1,7 @@
 package com.gergosgames.megafactory.client;
 
 import com.gergosgames.megafactory.Main;
+import com.gergosgames.megafactory.RegistrationHandler;
 import com.gergosgames.megafactory.content.item.*;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -15,21 +16,10 @@ import java.util.ArrayList;
 @EventBusSubscriber(value = Side.CLIENT, modid = Main.MODID)
 public class ModelRegistrationHandler {
 
-    //Arraylist of all items
-    public static ArrayList<Item> items = new ArrayList<>();
-
-
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent event) {
-
-        //Add all items to items arraylist
-        items.add(research_tablet.itemBase.getItem());
-        items.add(fire_sticks.itemBase.getItem());
-
-        for (Item i : items)
-        {   //For every item in items, register its model
-            registerModel(i, 0);
-        }
+        registerModel(RegistrationHandler.RESEARCH_TABLET,0);
+        registerModel(RegistrationHandler.FIRE_STICKS,0);
     }
 
     //Register models

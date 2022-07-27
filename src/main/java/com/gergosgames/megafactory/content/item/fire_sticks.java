@@ -15,6 +15,8 @@ public class fire_sticks extends Item
 {
     public static ItemBase itemBase = new ItemBase(CreativeTabs.MISC, 64);
 
+    public fire_sticks() {}
+
     public static void init()
     {
 
